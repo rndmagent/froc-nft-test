@@ -1,0 +1,182 @@
+[
+  {
+    "tokenId": 0,
+    "back": "background_common3",
+    "body": "body_rare1",
+    "face": "face_superrare1",
+    "item": "item_common2",
+    "fx": "none",
+    "status": "evolved"
+  },
+  {
+    "tokenId": 1,
+    "back": "background_common2",
+    "body": "body_common1",
+    "face": "face_common3",
+    "item": "item_common2",
+    "fx": "none",
+    "status": "normal"
+  },
+  {
+    "tokenId": 2,
+    "back": "background_common3",
+    "body": "body_common3",
+    "face": "face_superrare1",
+    "item": "item_common2",
+    "fx": "none",
+    "status": "normal"
+  },
+  {
+    "tokenId": 3,
+    "back": "background_common2",
+    "body": "body_common2",
+    "face": "face_common3",
+    "item": "item_common3",
+    "fx": "none",
+    "status": "normal"
+  },
+  {
+    "tokenId": 4,
+    "back": "background_common1",
+    "body": "body_common2",
+    "face": "face_common1",
+    "item": "item_rare1",
+    "fx": "none",
+    "status": "evolution"
+  },
+  {
+    "tokenId": 5,
+    "back": "background_superrare1",
+    "body": "body_common3",
+    "face": "face_common1",
+    "item": "item_rare1",
+    "fx": "none",
+    "status": "normal"
+  },
+  {
+    "tokenId": 6,
+    "back": "background_common3",
+    "body": "body_common2",
+    "face": "face_common3",
+    "item": "item_common1",
+    "fx": "none",
+    "status": "normal"
+  },
+  {
+    "tokenId": 7,
+    "back": "background_common1",
+    "body": "body_common2",
+    "face": "face_common1",
+    "item": "item_common2",
+    "fx": "none",
+    "status": "normal"
+  },
+  {
+    "tokenId": 8,
+    "back": "background_superrare1",
+    "body": "body_common1",
+    "face": "face_superrare1",
+    "item": "item_common2",
+    "fx": "none",
+    "status": "evolved"
+  },
+  {
+    "tokenId": 9,
+    "back": "background_superrare1",
+    "body": "body_common3",
+    "face": "face_common1",
+    "item": "item_common2",
+    "fx": "none",
+    "status": "evolved"
+  },
+  {
+    "tokenId": 10,
+    "back": "background_common1",
+    "body": "body_superrare1",
+    "face": "face_common1",
+    "item": "item_common3",
+    "fx": "none",
+    "status": "evolving"
+  },
+  {
+    "tokenId": 11,
+    "back": "background_common2",
+    "body": "body_common2",
+    "face": "face_common2",
+    "item": "item_common2",
+    "fx": "none",
+    "status": "normal"
+  },
+  {
+    "tokenId": 12,
+    "back": "background_rare1",
+    "body": "body_common2",
+    "face": "face_common3",
+    "item": "item_common1",
+    "fx": "none",
+    "status": "normal"
+  },
+  {
+    "tokenId": 13,
+    "back": "background_common3",
+    "body": "body_superrare1",
+    "face": "face_common2",
+    "item": "item_superrare1",
+    "fx": "none",
+    "status": "normal"
+  },
+  {
+    "tokenId": 14,
+    "back": "background_common3",
+    "body": "body_superrare1",
+    "face": "face_common3",
+    "item": "item_common2",
+    "fx": "none",
+    "status": "normal"
+  },
+  {
+    "tokenId": 15,
+    "back": "background_common2",
+    "body": "body_superrare1",
+    "face": "face_common2",
+    "item": "item_rare1",
+    "fx": "none",
+    "status": "normal"
+  },
+  {
+    "tokenId": 16,
+    "back": "background_common2",
+    "body": "body_common1",
+    "face": "face_common1",
+    "item": "item_rare1",
+    "fx": "none",
+    "status": "evolved"
+  },
+  {
+    "tokenId": 17,
+    "back": "background_common1",
+    "body": "body_rare1",
+    "face": "face_common3",
+    "item": "item_common3",
+    "fx": "none",
+    "status": "normal"
+  },
+  {
+    "tokenId": 18,
+    "back": "background_common1",
+    "body": "body_common3",
+    "face": "face_common1",
+    "item": "item_common3",
+    "fx": "none",
+    "status": "normal"
+  },
+  {
+    "tokenId": 19,
+    "back": "background_rare1",
+    "body": "body_common2",
+    "face": "face_rare1",
+    "item": "item_common2",
+    "fx": "none",
+    "status": "normal"
+  }
+]
