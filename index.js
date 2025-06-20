@@ -61,3 +61,55 @@ app.get("/api/image/:id", async (req, res) => {
 app.listen(PORT, () => {
   console.log(`FROC Server running at http://localhost:${PORT}`);
 });
+
+
+// ==== EVOLUTION CYCLE ====
+
+const EVOLUTION_INTERVAL = 60 * 1000; // каждые 60 секунд
+
+setInterval(() => {
+  try {
+    const dbPath = path.join(__dirname, "db", "db.json");
+    let dbData = JSON.parse(fs.readFileSync(dbPath));
+
+    // 1. Ищем NFT со статусом normal
+    const normalTokens = dbData.filter(nft => nft.status === "normal");
+    if (normalTokens.length === 0) return;
+
+    // 2. Выбираем одну случайную
+    const randomNFT = normalTokens[Math.floor(Math.random() * normalTokens.length)];
+    randomNFT.status = "evolving";
+
+    // 3. Сохраняем новое состояние
+    fs.writeFileSync(dbPath, JSON.stringify(dbData, null, 2));
+    console.log(`FROC #${randomNFT.tokenId} получил статус evolving`);
+
+    // 4. Таймер для завершения эволюции через 60 секунд
+    setTimeout(() => {
+      let updatedData = JSON.parse(fs.readFileSync(dbPath));
+      const evolvingNFT = updatedData.find(n => n.tokenId === randomNFT.tokenId);
+      if (!evolvingNFT) return;
+
+      // Возможные поля для изменения
+      const fields = ["back", "body", "face", "item"];
+      const fieldToChange = fields[Math.floor(Math.random() * fields.length)];
+
+      // Находим список всех доступных значений для этого поля
+      const currentValue = evolvingNFT[fieldToChange];
+      const options = [...new Set(updatedData.map(nft => nft[fieldToChange]))]
+        .filter(val => val !== currentValue);
+
+      if (options.length > 0) {
+        const newValue = options[Math.floor(Math.random() * options.length)];
+        evolvingNFT[fieldToChange] = newValue;
+        console.log(`FROC #${evolvingNFT.tokenId} обновил ${fieldToChange} на ${newValue}`);
+      }
+
+      evolvingNFT.status = "normal";
+      fs.writeFileSync(dbPath, JSON.stringify(updatedData, null, 2));
+    }, 60 * 1000);
+
+  } catch (err) {
+    console.error("Evolution error:", err);
+  }
+}, EVOLUTION_INTERVAL);

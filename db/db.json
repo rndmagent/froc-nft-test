@@ -6,7 +6,7 @@
     "face": "face_superrare1",
     "item": "item_common2",
     "fx": "none",
-    "status": "evolved"
+    "status": "normal"
   },
   {
     "tokenId": 1,
@@ -42,7 +42,7 @@
     "face": "face_common1",
     "item": "item_rare1",
     "fx": "none",
-    "status": "evolution"
+    "status": "normal"
   },
   {
     "tokenId": 5,
@@ -78,7 +78,7 @@
     "face": "face_superrare1",
     "item": "item_common2",
     "fx": "none",
-    "status": "evolved"
+    "status": "normal"
   },
   {
     "tokenId": 9,
@@ -87,7 +87,7 @@
     "face": "face_common1",
     "item": "item_common2",
     "fx": "none",
-    "status": "evolved"
+    "status": "normal"
   },
   {
     "tokenId": 10,
@@ -96,7 +96,7 @@
     "face": "face_common1",
     "item": "item_common3",
     "fx": "none",
-    "status": "evolving"
+    "status": "normal"
   },
   {
     "tokenId": 11,
@@ -150,7 +150,7 @@
     "face": "face_common1",
     "item": "item_rare1",
     "fx": "none",
-    "status": "evolved"
+    "status": "normal"
   },
   {
     "tokenId": 17,
