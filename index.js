@@ -17,7 +17,7 @@ app.get("/api/:id", (req, res) => {
   const metadata = {
     name: `FROC #${tokenId}`,
     description: "Test FROC NFT with dynamic attributes",
-    image: `http://localhost:${PORT}/api/image/${tokenId}`,
+    image: `https://froc-nft-test.onrender.com/api/image/${id}`,
     attributes: [
       { trait_type: "Background", value: froc.back },
       { trait_type: "Body", value: froc.body },
