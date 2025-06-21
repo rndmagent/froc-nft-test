@@ -49,6 +49,11 @@ app.get("/api/image/:id", async (req, res) => {
   const froc = db.find((nft) => nft.tokenId === tokenId);
   if (!froc) return res.status(404).send("NFT not found");
 
+  // 🩹 Вставка FX по статусу
+  if (froc.status === "evolving") {
+    froc.fx = "evolution_soon";
+  }
+
   try {
     const layers = [
       `layers/1_back/${froc.back}.png`,
