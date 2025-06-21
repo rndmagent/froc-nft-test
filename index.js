@@ -15,18 +15,18 @@ app.get("/api/:id", (req, res) => {
   if (!froc) return res.status(404).json({ error: "NFT not found" });
 
   const metadata = {
-    name: `FROC #${tokenId}`,
-    description: "Test FROC NFT with dynamic attributes",
-    image: `https://froc-nft-test.onrender.com/api/image/${id}`,
-    attributes: [
-      { trait_type: "Background", value: froc.back },
-      { trait_type: "Body", value: froc.body },
-      { trait_type: "Face", value: froc.face },
-      { trait_type: "Item", value: froc.item },
-      { trait_type: "FX", value: froc.fx },
-      { trait_type: "Status", value: froc.status }
-    ]
-  };
+  name: `FROC #${tokenId}`,
+  description: "Test FROC NFT with dynamic attributes",
+  image: `https://froc-nft-test.onrender.com/api/image/${tokenId}`,
+  attributes: [
+    { trait_type: "Background", value: froc.back },
+    { trait_type: "Body", value: froc.body },
+    { trait_type: "Face", value: froc.face },
+    { trait_type: "Item", value: froc.item },
+    { trait_type: "FX", value: froc.fx },
+    { trait_type: "Status", value: froc.status }
+  ]
+};
 
   res.json(metadata);
 });
