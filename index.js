@@ -21,6 +21,11 @@ app.get("/api/:id", (req, res) => {
   const froc = db.find((nft) => nft.tokenId === tokenId);
   if (!froc) return res.status(404).json({ error: "NFT not found" });
 
+  
+  if (froc.status === "evolving") {
+  froc.fx = "evolution_soon";
+}
+  
   const metadata = {
   name: `FROC #${tokenId}`,
   description: "Test FROC NFT with dynamic attributes",
