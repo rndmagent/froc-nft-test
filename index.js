@@ -54,7 +54,8 @@ app.get("/api/image/:id", async (req, res) => {
       `layers/1_back/${froc.back}.png`,
       `layers/2_body/${froc.body}.png`,
       `layers/3_face/${froc.face}.png`,
-      `layers/4_item/${froc.item}.png`
+      `layers/4_item/${froc.item}.png`,
+      `layers/5_fx/${froc.fx}.png`
     ];
 
     const base = sharp(layers[0]);
