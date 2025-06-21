@@ -1,15 +1,15 @@
-app.use(cors({
-  origin: 'https://froc-nft-viewer.onrender.com'
-}));
-
-
 const express = require("express");
+const cors = require("cors");
 const fs = require("fs");
 const loadDB = () => JSON.parse(fs.readFileSync("./db/db.json", "utf-8"));
 const sharp = require("sharp");
 const path = require("path");
 const app = express();
 const PORT = 3000;
+
+app.use(cors({
+  origin: 'https://froc-nft-viewer.onrender.com'
+}));
 
 const db = require("./db/db.json");
 
