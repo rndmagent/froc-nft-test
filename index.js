@@ -8,7 +8,9 @@ const app = express();
 const PORT = 3000;
 
 app.use(cors({
-  origin: 'https://froc-nft-viewer.onrender.com'
+  origin: 'https://froc-nft-viewer.onrender.com',
+  methods: ['GET'],
+  allowedHeaders: ['Content-Type'],
 }));
 
 const db = require("./db/db.json");
